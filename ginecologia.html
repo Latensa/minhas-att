@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Feminina</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        p {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<header>
+    <nav class="navbar">
+      <div class="logo">Ser Mulher</div>  
+      <ul id="navbar-links">
+        <li><a href="inicio.html">Sobre Nós</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="equipe.html">Equipe</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="#agendar" class="cta-button">Agendar Consulta</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <script>
+    // Função para alternar o menu em dispositivos móveis
+    function toggleMenu() {
+      const navbarLinks = document.getElementById('navbar-links');
+      navbarLinks.classList.toggle('show');
+    }
+
+      // Função para adicionar a classe 'transparent' à navbar quando o usuário rolar a página
+  window.onscroll = function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.pageYOffset > 50) { // A partir de 50px de rolagem
+      navbar.classList.add('transparent'); // Adiciona a classe para torná-la transparente
+    } else {
+      navbar.classList.remove('transparent'); // Remove a classe quando voltar ao topo
+    }
+  };
+
+  </script>
+
+<section id="about" class="about">
+    <div class="container">
+        <h2>Ginecologia</h2>
+        <p>A ginecologia é uma especialidade que cuida da saúde do sistema reprodutor feminino, atuando na prevenção, diagnóstico e tratamento de diversas condições. Essa área engloba exames periódicos, como o Papanicolau e ultrassonografias, e o acompanhamento de questões como saúde menstrual, infecções, métodos contraceptivos e menopausa.
+
+            Além disso, o ginecologista auxilia na saúde reprodutiva, desde o planejamento familiar até o pré-natal, oferecendo atendimento personalizado para cada fase da vida da mulher.
+            
+            Em uma clínica feminina, esse cuidado é realizado em um ambiente acolhedor, com foco na promoção da saúde, prevenção de doenças e bem-estar geral, garantindo um atendimento integral e humanizado.</p>
+    </div>
+    <video src="img/gineco.mp4" autoplay loop muted></video>
+</section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; 2025 Clínica Feminina. Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-center">
+                    <ul class="footer-links">
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#equipe">Equipe</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <ul class="social-links">
+                        <li><a href="#" target="_blank">Facebook</a></li>
+                        <li><a href="#" target="_blank">Instagram</a></li>
+                        <li><a href="#" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
